@@ -17,36 +17,69 @@
 		<div id="navbar">
 			<ul>
 				<li><a href="./index.html">Calendar</a></li>
-				<li><a href="./groups.html">Groups</a></li>
-				<li>
-					<ul>
-						<li>Browse Groups</li>
-						<li>Create Group</li>
-						<li>Manage Groups</li>
-					</ul>
+				<li><div class="sub-menu">
+						<button class="btn">Groups <i class="fa fa-caret-down"></i></button>
+						<div class="content">
+						   <a href="#"> Browse Groups </a>
+						   <a href="#"> Create Group </a>
+						   <a href="#"> Manage Groups </a>
+						</div>
 				</li>
-				<li><a href="./events.html">Events</a></li>
-				<li>
-					<ul>
-						<li>Events List</li>
-						<li>Create Event</li>
-						<li>Manage Events</li>
-					</ul>
+				<li><div class="sub-menu">
+					<button class="btn">Events <i class="fa fa-caret-down"></i></button>
+					<div class="content">
+					   <a href="#"> Events List </a>
+					   <a href="#"> Create Event </a>
+					   <a href="#"> Manage Events </a>
+					</div>
 				</li>
 				<li><a href="./knowledge-base.html">Knowledge</a></li>
 				<li><a href="./feedback.html">Feedback</a></li>
-				<li><a href="#">My Profile</a></li>
-			</ul>
+				<li><a href="#"><div class="active">My Profile</div></a></li>
+				<button><a href="#">Sign Out</a></button>
+			</ul>	
 		</div>
-		<div id ="body">
-			<div class = "card_profile_img"></div>
+
+		<div id ="card">
+			<img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Description" class="card_background_img">	  
+			<img src="https://images.unsplash.com/photo-1623945194105-cd36c4433390?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1693&q=80" alt="Description of the image" class="card_profile_img">
 			<div class = "user_details">
-				<h3>Anju Davis</h3>
-				<div class="btn">Edit</div>
-				<p>UCF Student</p>
-				<h3>user@gmail.com</h3>
-				<div class="btn">Edit</div>
+				<ul>
+				<li><h3>Name: Anju Davis</h3></li>
+				<li><button><a href="#">Edit</a></button></li>
+				</ul>
+				<li><p>UCF Student</p></li>
+				<ul>
+				<li><h3>Email: user@gmail.com</h3></li>
+				<li><button><a href="#">Edit</a></button></li>
+				</ul>
 		    </div> 
 		</div>
+		<div id ="Group_card">
+			<div class="Group_details">
+				<h2>Groups</h2>
+				<ul>
+					<li>Knights Sports</li>
+					<li>Girls Coding Scouts</li>
+					<li>Knights Cheerleaders</li>
+				</ul>
+			</div>	
+		</div>
+		<div id ="Events_card">
+			<div class="Event_details">
+				<h2>Events</h2>
+				<ul>
+					<li>
+						<h3>Girls Coding Camp</h3>
+						<p>Date: January 1, 2024</p>
+						<p>Description: All the members in "Girls Coding Scouts" have an opportunity to express themselves through our small boot camp.</p>				
+					</li>
+					<li>
+						<h3>Welcoming Newbies to Knight Sports</h3>
+						<p>Description: Welcome all the new comers to our Knight Sports.</p>
+					</li>
+				</ul>
+			</div>
+		</div>	
 	</body>
 </html>

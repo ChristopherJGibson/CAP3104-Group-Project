@@ -12,11 +12,35 @@
 
 #navbar{
 	background-color:#ba9b37;
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    font-family: calibri;
+	padding-right: 15px;
+	padding left: 15px;
+}
+
+#navbar a{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#navbar a.active{
+	background-color: #151301;
+	color: rgb(241, 227, 227);
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+
+li a{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 25px;
 }
 
 #h3 {
@@ -30,7 +54,7 @@
 	text-align: center;
 }
 
-#body {
+#card {
     width: 360px;
     height: auto;
     background-color: #ffffff;
@@ -39,21 +63,20 @@
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
-#card_background_img {
-    width: 100%;
+.card_background_img{
+	width: 100%;
     height: 180px;
     background-color: #e1e7ed;
-    background: url("https://pbs.twimg.com/media/Ej5zllnXgAEhTz9?format=jpg&name=large");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#card_profile_img {
+.card_profile_img{
+		
     width: 120px;
     height: 120px;
     background-color: #868d9b;
-    background: url("https://source.unsplash.com/7Sz71zuuW4k");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,8 +84,8 @@
     border-radius: 120px;
     margin: 0 auto;
     margin-top: -60px;
+	}
 
-}
 
 #user_details p {
     margin-bottom: 20px;
@@ -76,20 +99,103 @@
 #p{
     font-size: 14px;
     color: #868d9b;
+	margin-right: 10px;
 }
 
-#btn {
-    padding: 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background-color: #24c5a1;
-    color: #ffffff;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
+#Group_card {
+	float: left;
+    width: 360px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 80px;
+	margin-right: 5%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
+#Group_details p {
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+#Group_details h2 {
+    margin-top: 10px;
+	text-align: center;
+	color: #4d0a0a;
+}
+
+#Events_card {
+	float: right;
+    width: 360px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 80px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+#Event_details p {
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
+#Event_details h2 {
+    margin-top: 10px;
+	text-align: center;
+	color: #4d0a0a;
+}
+
+button {
+    background-color: black;
+	margin-left: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	width: 80px;
+}
+
+button a{
+	color: white;
+	font-size: 10px;
+}
+
+
+.sub-menu {
+	float: left;
+	overflow: hidden;
+	
+ }
+ .sub-menu .btn {
+	font-size: 16px; 
+	font-weight: bold; 
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	border: none;
+		
+ }
+ .navbar a:hover, .sub-menu:hover, .btn  {
+	background-color: black;
+ }
+ .content {
+	display: none;
+	position: absolute;
+	left: 7px;
+	background-color: black;
+	width: 50%;
+	z-index: 1;	  
+  }
+  .content a {
+	float: left;
+	color: white;
+	text-decoration: none;
+  }
+  .content a:hover {
+	background-color: #0f0e0e;
+	color: black;
+  }
+  .sub-menu:hover .content {
+	display: block;
+  }
