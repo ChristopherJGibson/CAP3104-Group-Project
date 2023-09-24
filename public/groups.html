@@ -13,12 +13,6 @@
 	<script type="text/javascript" src="https://releases.jquery.com/git/jquery-git.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 
-	<!-- DHTMLXScheduler Calendar Library -->
-	<script src="./scheduler/dhtmlxscheduler.js"></script>
-	<link rel="stylesheet" href="./scheduler/dhtmlxscheduler_material.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" href="./css/index.css">
-	<link rel="stylesheet" href="./css/groups.css">
-
 </head>
 
 <body>
@@ -52,18 +46,18 @@
 							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Events List</a>
-							<a class="dropdown-item" href="#">Create Event</a>
+							<a class="dropdown-item" href="./events.html">Create Event</a>
 							<a class="dropdown-item" href="#">Manage Events</a>
 						</div>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#"> Knowledge Base</a>
+						<a class="nav-link" href="./knowledge-base.html"> Knowledge Base</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#"> Feedback</a>
+						<a class="nav-link" href="./feedback.html"> Feedback</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#"> My Profile</a>
+						<a class="nav-link" href="./user.html"> My Profile</a>
 					</li>
 				</ul>
 			</div>
@@ -110,4 +104,7 @@
 			</div>
 		</div>
 	</body>
+	<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/groups.css">
 </html>
