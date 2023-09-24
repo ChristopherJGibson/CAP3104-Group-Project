@@ -6,13 +6,11 @@
 
 #head{
 	background-color:#ffc904;
-	height:7em;
+	height:5em;
+	align:center;
 }
 
 #navbar{
 	background-color:#ba9b37;
-}
-
-#body{
-	
+	width:100%;
 }
