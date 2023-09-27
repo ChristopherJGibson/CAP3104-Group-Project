@@ -1,3 +1,6 @@
+// link to mongodb online server 
+// mongodb+srv://eldeaygo:<password>@cnt3104.rwqw5ty.mongodb.net/?retryWrites=true&w=majority
+
 // init calendar
 scheduler.init('scheduler_here', new Date(),"month");
 
