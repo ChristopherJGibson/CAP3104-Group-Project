@@ -28,7 +28,7 @@ async function run() {
 run().catch(console.dir);
 
 
-async function checkUser(username, password) {
+  async function checkUser(username, password) {
     try {
       const database = client.db("CNT3104"); // Replace with your actual database name
       const usersCollection = database.collection("users"); // Replace with your actual collection name
@@ -48,27 +48,7 @@ async function checkUser(username, password) {
       }
   }
 
-checkUser('johndoe', 'Testing123');
-
-// const express = require('express');
-// const app = express();
-// const PORT = process.env.PORT || 3000;
-
-// // Define routes and middleware here
-
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}`);
-// });
-
-// app.post(uri, (req, res) => {
-//     const { username, password } = req.body;
-  
-//     // Find a user with the provided username and password
-//     const user = users.find(u => u.username === username && u.password === password);
-  
-//     if (!user) {
-//       return res.status(401).send('Invalid username or password');
-//     }
-  
-//     return res.status(200).send('Login successful');
-//   });
+if(checkUser('johndoe', 'Testing123'))
+{
+  window.location.href = 'user.html';
+}
