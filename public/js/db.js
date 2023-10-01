@@ -48,7 +48,7 @@ run().catch(console.dir);
       }
   }
 
-if(checkUser('johndoe', 'Testing123'))
+if(checkUser('johndoe@gmail.com', 'Testing123'))
 {
   window.location.href = 'user.html';
 }
