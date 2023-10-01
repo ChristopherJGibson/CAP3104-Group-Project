@@ -48,3 +48,9 @@ height:5rem;
 background-color:#ba9b37;
 width:100%;
 }
+
+
+.form-signin {
+  max-width: 25rem;
+  margin: auto;
+}
