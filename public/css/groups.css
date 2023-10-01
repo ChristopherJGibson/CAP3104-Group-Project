@@ -1,0 +1,48 @@
+.groupscreation {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.groupscreation h3 {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input-group label {
+    margin-right: 0.5rem;
+    width: 12%;
+}
+
+.input-group input, .input-group select, .input-group textarea {
+    flex: 1;
+}
+
+.group-card{
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.group-card button{
+    padding: 0.25rem 1.5rem;
+    border-radius: 8px;
+    background-color: #ffc904;
+    border: solid 1px #ffc904;
+}
+
+.group-cards{
+    gap: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+

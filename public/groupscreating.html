@@ -13,10 +13,6 @@
 	<script type="text/javascript" src="https://releases.jquery.com/git/jquery-git.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 
-	<!-- DHTMLXScheduler Calendar Library -->
-	<script src="./scheduler/dhtmlxscheduler.js"></script>
-	<link rel="stylesheet" href="./scheduler/dhtmlxscheduler_material.css" type="text/css" charset="utf-8">
-
 </head>
 
 <body>
@@ -61,39 +57,41 @@
 						<a class="nav-link" href="./feedback.html"> Feedback</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="./login.html"> Login/Sign Up</a>
+						<a class="nav-link" href="./login.html"> My Profile</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<div id="body">
-		<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100vh;'>
-			<div class="dhx_cal_navline">
-				<div class="dhx_cal_prev_button">&nbsp;</div>
-				<div class="dhx_cal_next_button">&nbsp;</div>
-				<div class="dhx_cal_today_button"></div>
-				<div class="dhx_cal_date"></div>
-				<div class="dhx_cal_tab" data-bs-tab="day"></div>
-				<div class="dhx_cal_tab" data-bs-tab="week"></div>
-				<div class="dhx_cal_tab" data-bs-tab="month"></div>
+	<div class="groupscreation">
+		<h3>Create Your Group</h3>
+		<form>
+			<div class="input-group">
+				<label for="groupname">Group Name:</label>
+				<input type="text" name="create group name" id="create group name" required>
 			</div>
-			<div class="dhx_cal_header"></div>
-			<div class="dhx_cal_data"></div>
-			<style type="text/css" media="screen">
-				html,
-				body {
-					margin: 0px;
-					padding: 0px;
-					height: 100%;
-					overflow: hidden;
-				}
-			</style>
-		</div>
+			<div class="input-group">
+				<label for="grouptype">Group Type:</label>
+				<select name="grouptype" id="grouptype" required>
+					<option value="" disabled selected hidden>Choose a Group<option>
+					<option value="School">School</option>
+					<option value="Personal">Personal</option>
+					<option value="Family">Family</option>
+					<option value="test4">test4</option>
+				</select>
+			</div>
+			<div class="input-group">
+				<label for="groupdescritption">Group Details: </label>
+				<textarea name="groupdetails" id="groupsdetails" cols="30" rows="10"></textarea>
+			</div>
+			<button type="submit">Create</button>
+		</form>
+		<form action="" method="post"></form>
+
 	</div>
 	<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
-	<script type="text/javascript" src="./js/index.js"></script>
-	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/groups.css">
 </body>
 
 </html>

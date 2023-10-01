@@ -67,33 +67,48 @@
 			</div>
 		</nav>
 	</div>
-	<div id="body">
-		<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100vh;'>
-			<div class="dhx_cal_navline">
-				<div class="dhx_cal_prev_button">&nbsp;</div>
-				<div class="dhx_cal_next_button">&nbsp;</div>
-				<div class="dhx_cal_today_button"></div>
-				<div class="dhx_cal_date"></div>
-				<div class="dhx_cal_tab" data-bs-tab="day"></div>
-				<div class="dhx_cal_tab" data-bs-tab="week"></div>
-				<div class="dhx_cal_tab" data-bs-tab="month"></div>
-			</div>
-			<div class="dhx_cal_header"></div>
-			<div class="dhx_cal_data"></div>
-			<style type="text/css" media="screen">
-				html,
-				body {
-					margin: 0px;
-					padding: 0px;
-					height: 100%;
-					overflow: hidden;
-				}
-			</style>
-		</div>
-	</div>
-	<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
-	<script type="text/javascript" src="./js/index.js"></script>
-	<link rel="stylesheet" href="./css/index.css" />
-</body>
+  <div id ="card">  
+  <div class="container">
+    <ul>
+    <h2>Sign In</h2>
+    <form>
+      <li><label for="username">Username:</label>
+      <input type="text" id="username" name="username" required></li>
 
+      <li><label for="password">Password:</label>
+      <input type="password" id="password" name="password" required></li>
+
+      <li><button><a href="#">Login</a></button></li>
+    </form>
+    </ul>
+  </div>
+  </div>
+  <div id ="signup_card">
+  <div class="sign_up">
+    <h2>Sign Up</h2>
+    <form>
+      <ul>
+      <li><label for="username">Username:</label>
+      <input type="text" id="username" name="username" required></li>
+    </ul>
+      
+    <ul>
+      <li><label for="email">Email:</label>
+      <input type="text" id="email" name="email" required></li>
+    </ul>
+    <ul>
+      <li><label for="password">Password:</label>
+      <input type="password" id="password" name="password" required></li>
+    </ul>
+    <ul>
+      <li><label for="password">Confirm Password:</label>
+      <input type="password" id="password" name="password" required></li>
+    </ul>
+    <ul>
+      <li><button><a href="#">Sign Up</a></button></li>
+      </ul>
+    </form>
+  </div>
+  </div>
+</body>
 </html>
