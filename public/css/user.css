@@ -10,40 +10,19 @@
 	height:7em;
 }
 
-#navbar{
-	background-color:#ba9b37;
-    font-family: calibri;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-
-#navbar a{
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-}
-
-#navbar a.active{
-	background-color: #151301;
-	color: rgb(241, 227, 227);
-}
-
-li{
+#li{
 	list-style: none;
 	display: inline-block;
 }
 
-li a{
+#li a{
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
 	margin-right: 25px;
 }
 
-#h3 {
+#h3{
     font-size: 18px;
     font-weight: 500;
     color: #33363b;
@@ -54,7 +33,7 @@ li a{
 	text-align: center;
 }
 
-#card {
+#card{
     width: 360px;
     height: auto;
     background-color: #ffffff;
@@ -63,7 +42,7 @@ li a{
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
-.card_background_img{
+#card_background_img{
 	width: 100%;
     height: 180px;
     background-color: #e1e7ed;
@@ -72,7 +51,7 @@ li a{
     background-position: center;
 }
 
-.card_profile_img{
+#card_profile_img{
 		
     width: 120px;
     height: 120px;
@@ -87,12 +66,12 @@ li a{
 	}
 
 
-#user_details p {
+#user_details p{
     margin-bottom: 20px;
     margin-top: -5px;
 }
 
-#user_details h3 {
+#user_details h3{
     margin-top: 10px;
 }
 
@@ -102,7 +81,7 @@ li a{
 	margin-right: 10px;
 }
 
-#Group_card {
+#Group_card{
 	float: left;
     width: 360px;
     height: auto;
@@ -113,18 +92,18 @@ li a{
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
-#Group_details p {
+#Group_details p{
     margin-bottom: 20px;
     margin-top: -5px;
 }
 
-#Group_details h2 {
+#Group_details h2{
     margin-top: 10px;
 	text-align: center;
 	color: #4d0a0a;
 }
 
-#Events_card {
+#Events_card{
 	float: right;
     width: 360px;
     height: auto;
@@ -134,18 +113,18 @@ li a{
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
 }
 
-#Event_details p {
+#Event_details p{
     margin-bottom: 20px;
     margin-top: -5px;
 }
 
-#Event_details h2 {
+#Event_details h2{
     margin-top: 10px;
 	text-align: center;
 	color: #4d0a0a;
 }
 
-button {
+#button{
     background-color: black;
 	margin-left: 10px;
 	border-radius: 5px;
@@ -153,18 +132,19 @@ button {
 	width: 80px;
 }
 
-button a{
+#button a{
 	color: white;
 	font-size: 10px;
 }
 
 
-.sub-menu {
+#sub-menu{
 	float: left;
 	overflow: hidden;
 	
  }
- .sub-menu .btn {
+ 
+#sub-menu .btn{
 	font-size: 16px; 
 	font-weight: bold; 
 	outline: none;
@@ -176,10 +156,12 @@ button a{
 	border: none;
 		
  }
- .navbar a:hover, .sub-menu:hover, .btn  {
+ 
+#navbar a:hover, .sub-menu:hover, .btn{
 	background-color: black;
  }
- .content {
+ 
+#content{
 	display: none;
 	position: absolute;
 	left: 7px;
@@ -187,15 +169,18 @@ button a{
 	width: 50%;
 	z-index: 1;	  
   }
-  .content a {
+ 
+#content a{
 	float: left;
 	color: white;
 	text-decoration: none;
   }
-  .content a:hover {
+ 
+#content a:hover{
 	background-color: #0f0e0e;
 	color: black;
   }
-  .sub-menu:hover .content {
+  
+#sub-menu:hover .content{
 	display: block;
   }
