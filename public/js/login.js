@@ -104,14 +104,14 @@
 //   }
 
 async function submitForm(event) {
-    event.preventDefault();
-    const username = document.querySelector('.login-input[name="username"]').value;
-    const password = document.querySelector('.login-input[name="password"]').value;
+   event.preventDefault();
+   const username = document.querySelector('.login-input[name="username"]').value;
+  const password = document.querySelector('.login-input[name="password"]').value;
 
-    const response = await fetch('/login', {
+   const response = await fetch('/login', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ username, password })
     });

@@ -1,99 +1,89 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Knight Site Planner</title>
+		<!-- Bootstrap CDN links -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
 
-<head>
-	<title>Knight Site Planner</title>
-	<!-- Bootstrap CDN links -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+		<!-- jQuery and jQuery UI CDN links -->
+		<script type="text/javascript" src="https://releases.jquery.com/git/jquery-git.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 
-	<!-- jQuery and jQuery UI CDN links -->
-	<script type="text/javascript" src="https://releases.jquery.com/git/jquery-git.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+		<!-- DHTMLXScheduler Calendar Library -->
+		<script src="./scheduler/dhtmlxscheduler.js"></script>
+		<link rel="stylesheet" href="./scheduler/dhtmlxscheduler_material.css" type="text/css" charset="utf-8">
 
-	<!-- DHTMLXScheduler Calendar Library -->
-	<script src="./scheduler/dhtmlxscheduler.js"></script>
-	<link rel="stylesheet" href="./scheduler/dhtmlxscheduler_material.css" type="text/css" charset="utf-8">
-
-</head>
-
-<body>
-	<div id="head">
-		<h1>Knight Site Planner</h1>
-	</div>
-	<div id="navbar">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#ba9b37;">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html"> Calendar</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Groups</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="groups.html">Browse Groups</a>
-							<a class="dropdown-item" href="groupscreating.html">Create Groups</a>
-							<a class="dropdown-item" href="#">Manage Groups</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Events List</a>
-							<a class="dropdown-item" href="./events.html">Create Event</a>
-							<a class="dropdown-item" href="#">Manage Events</a>
-						</div>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="./knowledge-base.html"> Knowledge Base</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="./feedback.html"> Feedback</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="./login.html"> Login/Sign Up</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div id="body">
-		<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100vh;'>
-			<div class="dhx_cal_navline">
-				<div class="dhx_cal_prev_button">&nbsp;</div>
-				<div class="dhx_cal_next_button">&nbsp;</div>
-				<div class="dhx_cal_today_button"></div>
-				<div class="dhx_cal_date"></div>
-				<div class="dhx_cal_tab" data-bs-tab="day"></div>
-				<div class="dhx_cal_tab" data-bs-tab="week"></div>
-				<div class="dhx_cal_tab" data-bs-tab="month"></div>
-			</div>
-			<div class="dhx_cal_header"></div>
-			<div class="dhx_cal_data"></div>
-			<style type="text/css" media="screen">
-				html,
-				body {
-					margin: 0px;
-					padding: 0px;
-					height: 100%;
-					overflow: hidden;
-				}
-			</style>
+	</head>
+	<body>
+		<div id="head">
+			<h1>Knight Site Planner</h1>
 		</div>
-	</div>
-	<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
-	<script type="text/javascript" src="./js/index.js"></script>
-	<link rel="stylesheet" href="./css/index.css" />
-</body>
+		<div id="navbar">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:#ba9b37;">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> Calendar</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Groups</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Browse Groups</a>
+								<a class="dropdown-item" href="#">Create Groups</a>
+								<a class="dropdown-item" href="#">Manage Groups</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Events List</a>
+								<a class="dropdown-item" href="#">Create Event</a>
+								<a class="dropdown-item" href="#">Manage Events</a>
+							</div>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> Knowledge Base</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> Feedback</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> My Profile</a>
+						</li>
+						</ul>
+				</div>
+			</nav>
+		</div>
+		<div id="body">
+			<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100vh;'>
+				<div class="dhx_cal_navline">
+					<div class="dhx_cal_prev_button">&nbsp;</div>
+					<div class="dhx_cal_next_button">&nbsp;</div>
+					<div class="dhx_cal_today_button"></div>
+					<div class="dhx_cal_date"></div>
+					<div class="dhx_cal_tab" data-bs-tab="day"></div>
+					<div class="dhx_cal_tab" data-bs-tab="week"></div>
+					<div class="dhx_cal_tab" data-bs-tab="month"></div>
+				</div>
+				<div class="dhx_cal_header"></div>
+				<div class="dhx_cal_data"></div>
+				<style type="text/css" media="screen">
+					html, body{
+						margin:0px;
+						padding:0px;
+						height:100%;
+						overflow:hidden;
+					}   
+				</style>
+			</div>
+		</div>
+		<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
+		<script type="text/javascript" src="./js/index.js"></script>
+		<link rel="stylesheet" href="./css/index.css"/>
+	</body>
 </html>
