@@ -69,37 +69,32 @@
                 </div>
             </nav>
         </div>
-        <body class="text-center">
-          <main class="form-signin">
-            <form onsubmit="return login()">
-              <img class="mb-4" src="https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg?w=740&t=st=1696199850~exp=1696200450~hmac=47bb470be991caa3712214e4dfaa3bf4c1b3a54aead2b9a61450a6401957e894" alt="" height="300">
-          
-              
-              <div class="form-floating">
-                <input type="email" class="form-control" id="username" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="password" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div>
-          
-              <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Login</button>
-            </form>
-          </main>
-      
-          <script src="login.js"></script>    
-        <div>
-            <h4>If you don't have an account already</h4>
-            <button onclick="redirectToNewPage()">Sign up</button>
-        <script>
-            function redirectToNewPage() {
-                // Use window.location to change the current URL
-                window.location.href = 'signup.html';
-            }
-        </script>
-        </div>
+        <main class="text-center">
+            <div class="form-signin">
+              <form onSubmit="submitForm(event)">
+                <img class="mb-4" src="https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg?w=740&t=st=1696199850~exp=1696200450~hmac=47bb470be991caa3712214e4dfaa3bf4c1b3a54aead2b9a61450a6401957e894" alt="" height="300">
+            
+                
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="username" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mt-3">
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+            
+                <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Login</button>
+              </form>
+            </div>
         
-        <script src="./js/login.js"></script>
+            <!--<script src="login.js"></script>     -->
+          <div class="mt-4">
+              <h6>If you don't have an account already</h4>
+              <a href="./signup.html" class="btn btn-outline-dark">Sign up</a> <!-- Since you are just going to a page.. you should just href to the page-->
+          </div>
+        </main>
+          <script src="./js/login.js"></script>
+
 </body>
 </html>
