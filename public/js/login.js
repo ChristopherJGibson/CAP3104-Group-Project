@@ -39,6 +39,7 @@ async function submitForm(event) {
 
     if (username === nameToEmail && password === movies.birth_year) { // lukeskywalker@gmail.com 19BBY
         alert('Login successful'); // You can replace this with any action you want
+        document.cookie = `username=${username}`;
         window.location.href = 'user.html';
     } else {
         alert('Invalid credentials');
