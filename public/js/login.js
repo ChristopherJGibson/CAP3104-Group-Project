@@ -33,9 +33,9 @@ async function submitForm(event) {
     console.log(nameToEmail);
     console.log(movies.birth_year)
 
-    // checkUser(username, password);
+    checkUser(username, password);
 
-    // console.log(checkUser(username, password));
+    console.log(checkUser(username, password));
 
     if (username === nameToEmail && password === movies.birth_year) { // lukeskywalker@gmail.com 19BBY
         alert('Login successful'); // You can replace this with any action you want
