@@ -31,11 +31,18 @@
     padding: 1rem;
 }
 
-.group-card button{
+.not_clicked{
     padding: 0.25rem 1.5rem;
     border-radius: 8px;
     background-color: #ffc904;
     border: solid 1px #ffc904;
+}
+
+.clicked{
+    padding: 0.25rem 1.5rem;
+    border-radius: 8px;
+    border: solid 1px #ffc904;
+    background-color: blue;
 }
 
 .group-cards{
