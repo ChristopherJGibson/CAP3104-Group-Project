@@ -17,3 +17,7 @@ function getGroupCookies() {
 
    return groups;
 }
+
+
+
+setGroupCookies('Knights, Clubs, Studying', 'knights')
