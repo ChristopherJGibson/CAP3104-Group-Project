@@ -20,4 +20,8 @@ function getGroupCookies() {
 
 
 
-setGroupCookies('Knights, Clubs, Studying', 'knights')
+setGroupCookies('Knights, Clubs, Studying', 'knights');
+
+function onAddGroup() {
+   console.log(document.cookie)
+}
