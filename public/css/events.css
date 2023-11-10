@@ -9,3 +9,20 @@
 	font-weight:bolder;
 	text-align: center;
 }
+
+.topnav input[type=text] {
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	border: none;
+	font-size: 17px;
+	width: 130px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  .topnav input[type=text]:focus {
+	width: 100%;
+  }
