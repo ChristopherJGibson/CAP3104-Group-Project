@@ -31,21 +31,37 @@
     padding: 1rem;
 }
 
-.group-card button{
+.not_clicked{
     padding: 0.25rem 1.5rem;
     border-radius: 8px;
     background-color: #ffc904;
     border: solid 1px #ffc904;
 }
 
+.clicked{
+    padding: 0.25rem 1.5rem;
+    border-radius: 8px;
+    border: solid 1px #ffc904;
+    background-color: blue;
+}
+
 .group-cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
     gap: 1rem;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
 }
-
-
+.search-container {
+	display: flex;
+	justify-content: center;
+  }
+  input[type=text] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+  }
