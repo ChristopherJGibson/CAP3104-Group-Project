@@ -9,20 +9,19 @@
 	font-weight:bolder;
 	text-align: center;
 }
-
-.topnav input[type=text] {
-	float: right;
-	padding: 6px;
-	margin-top: 8px;
-	margin-right: 16px;
-	border: none;
-	font-size: 17px;
-	width: 130px;
-	-webkit-transition: width 0.4s ease-in-out;
-	transition: width 0.4s ease-in-out;
+.search-container {
+	display: flex;
+	justify-content: center;
   }
   
-  /* When the input field gets focus, change its width to 100% */
-  .topnav input[type=text]:focus {
-	width: 100%;
+  input[type=text] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
   }
+  
+  
