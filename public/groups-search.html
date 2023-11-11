@@ -59,71 +59,34 @@
 				</div>
 			</nav>
 		</div>
-
-		<div class="search-container">
+	<div class="search-container">
 			<form action="">
 			  <input type="text" placeholder="Search...">
 			  <button type="submit" onclick="return redirectPage();">Search</button>
 			</form>
-		  </div>	  
+		  </div>
 
-		<div id="event_body">
-			<div id="group_title"><h1>Knights Sports</h1></div>
-			<div id="event">
-				<h3>Welcoming Newbies to Knight Sports</h3>
-				<p>January 1, 2024</p>
-				<div class="wrapper">
-					<div class="text">Email notifications</div>
-					<input id="checkbox" type="checkbox" checked="checked"/>
-					<label class="button" for="checkbox">
-						<div class="dot"></div>
-					</label>
+		<div class="container-fluid">
+			<div class="row gx-4">
+				<div class="col-sm-6 group-card">
+					<div class="group-content">
+						<h2>Test Group 1</h2>
+						<h3>Type of Group test 1</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas facere deleniti voluptas reprehenderit. Consequuntur in porro error libero impedit alias neque nisi natus aliquid reiciendis temporibus deserunt, ipsa sed quisquam?</p>
+					</div>
+					<button id='button' class='not_clicked'>Join</button>
 				</div>
-				<p>Welcome all the newcomers to our Knight Sports.</p>
-				<br>
-				<p id="keywords">keywords: sports, football, basketball, freshman</p>
-			</div>
-			<hr>
-			<div id="group_title"><h1>Girls Coding Scouts</h1></div>
-			<div id="event">
-				<h3>Girls Coding Camp</h3>
-				<p>January 1, 2024</p>
-				<div class="wrapper">
-					<div class="text">Email notifications</div>
-					<input id="checkbox" type="checkbox" checked="checked"/>
-					<label class="button" for="checkbox">
-						<div class="dot"></div>
-					</label>
-				</div>
-				<p>All the members in "Girls Coding Scouts" have an opportunity to express themselves through our small boot camp.</p>
-				<br>
-				<p id="keywords">keywords: STEM, coding, women</p>
-			</div>
-			<hr>
-			<div id="group_title"><h1>Test Group 1</h1></div>
-			<div id="event">
-				<h3>Test Event 1</h3>
-				<p>January 1, 1970</p>
-				<div class="wrapper">
-					<div class="text">Email notifications</div>
-					<input id="checkbox" type="checkbox" checked="checked"/>
-					<label class="button" for="checkbox">
-						<div class="dot"></div>
-					</label>
-				</div>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas facere deleniti voluptas reprehenderit. Consequuntur in porro error libero impedit alias neque nisi natus aliquid reiciendis temporibus deserunt, ipsa sed quisquam?</p>
-				<br>
-				<p id="keywords">keywords: lorem, ipsum, dolor, demo</p>
 			</div>
 		</div>
-	</body>
-	<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
-	<link rel="stylesheet" href="./css/index.css"/>
-	<link rel="stylesheet" href="./css/events.css"/>
-	<script type="text/javascript" src="./js/index.js"></script>
+	</div>
+</body>
+<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
+<script type="text/javascript" src="./js/groups.js"></script>
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/groups.css">
 	<script>
 		var redirectPage = function(){
-			window.location.replace("./events-search.html");
+			window.location.replace("https://w3docs.com");
 			console.log("Test");
 			return false;
 		}

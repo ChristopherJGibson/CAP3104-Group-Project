@@ -65,3 +65,8 @@
 	border-radius: 4px;
 	background-color: #f8f8f8;
   }
+
+  .keywords{
+    font-style:italic;
+    font-size: 11px;
+  }
