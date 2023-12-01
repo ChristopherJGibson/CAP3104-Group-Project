@@ -177,3 +177,16 @@
 #sub-menu:hover .content{
 	display: block;
   }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+	display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+

@@ -63,7 +63,7 @@
 		<div class="search-container">
 			<form action="">
 			  <input type="text" placeholder="Search...">
-			  <button type="submit">Search</button>
+			  <button type="submit" onclick="return redirectPage();">Search</button>
 			</form>
 		  </div>	  
 
@@ -72,26 +72,82 @@
 			<div id="event">
 				<h3>Welcoming Newbies to Knight Sports</h3>
 				<p>January 1, 2024</p>
+				<div class="wrapper">
+					<div class="text">Email notifications</div>
+					<input id="checkbox" type="checkbox" checked="checked"/>
+					<label class="button" for="checkbox">
+						<div class="dot"></div>
+					</label>
+				</div>
 				<p>Welcome all the newcomers to our Knight Sports.</p>
+				<br>
+				<p id="keywords">keywords: sports, football, basketball, freshman</p>
 			</div>
 			<hr>
 			<div id="group_title"><h1>Girls Coding Scouts</h1></div>
 			<div id="event">
 				<h3>Girls Coding Camp</h3>
 				<p>January 1, 2024</p>
+				<div class="wrapper">
+					<div class="text">Email notifications</div>
+					<input id="checkbox" type="checkbox" checked="checked"/>
+					<label class="button" for="checkbox">
+						<div class="dot"></div>
+					</label>
+				</div>
 				<p>All the members in "Girls Coding Scouts" have an opportunity to express themselves through our small boot camp.</p>
+				<br>
+				<p id="keywords">keywords: STEM, coding, women</p>
 			</div>
 			<hr>
 			<div id="group_title"><h1>Test Group 1</h1></div>
 			<div id="event">
 				<h3>Test Event 1</h3>
 				<p>January 1, 1970</p>
+				<div class="wrapper">
+					<div class="text">Email notifications</div>
+					<input id="checkbox" type="checkbox" checked="checked"/>
+					<label class="button" for="checkbox">
+						<div class="dot"></div>
+					</label>
+				</div>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas facere deleniti voluptas reprehenderit. Consequuntur in porro error libero impedit alias neque nisi natus aliquid reiciendis temporibus deserunt, ipsa sed quisquam?</p>
+				<br>
+				<p id="keywords">keywords: lorem, ipsum, dolor, demo</p>
 			</div>
 		</div>
+
+		<!-- BOTTOM NAVIGATION BAR-->
+		<div id="bottom-navbar">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="privacy.html"> Privacy</a>
+							<a class="nav-link" href="help-support.html">Help and Support</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
 	</body>
+
+
+
 	<!-- Page CSS / Javascript, loading after the page elements to avoid errors -->
 	<link rel="stylesheet" href="./css/index.css"/>
 	<link rel="stylesheet" href="./css/events.css"/>
 	<script type="text/javascript" src="./js/index.js"></script>
+	<script>
+		var redirectPage = function(){
+			window.location.replace("./events-search.html");
+			console.log("Test");
+			return false;
+		}
+	</script>
 </html>

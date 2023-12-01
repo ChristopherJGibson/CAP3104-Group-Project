@@ -65,3 +65,15 @@
 	border-radius: 4px;
 	background-color: #f8f8f8;
   }
+
+  .keywords{
+    font-style:italic;
+    font-size: 11px;
+  }
+
+  .bottom-navbar{
+	background-color: #333;
+	overflow: hidden;	
+	bottom: 0;
+	width: 100%;
+}
