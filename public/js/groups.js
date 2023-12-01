@@ -1,3 +1,37 @@
+login
 $(button).click(function() {
     $(button).addClass('clicked');
   });
+// Function to set the cookies
+function setGroupCookies(memberOf, managerOf) {
+  document.cookie = `memberOf=${JSON.stringify(memberOf)}; path=/`;
+  document.cookie = `managerOf=${JSON.stringify(managerOf)}; path=/`;
+}
+
+// Function to get the cookies
+function getGroupCookies() {
+  const cookies = document.cookie.split(';').map(cookie => cookie.trim().split('='));
+  const groupCookies = cookies.filter(cookie => cookie[0] === "memberOf" || cookie[0] === "managerOf");
+
+  const groups = {};
+
+  for (const cookie of groupCookies) {
+      groups[cookie[0]] = JSON.parse(cookie[1]);
+  }
+
+  return groups;
+}
+
+
+
+setGroupCookies('Knights, Clubs, Studying', 'knights');
+
+function onAddGroup() {
+  const groups = getGroupCookies();
+  // console.log(groups.memberOf);
+  const el = document.getElementById('cookie-name').innerText;
+  // console.log(el);
+  document.cookie = `memberOf="${groups.memberOf}, ${el}"; path=/`;
+
+}
+main
