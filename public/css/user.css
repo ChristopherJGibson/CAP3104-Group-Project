@@ -178,9 +178,15 @@
 	display: block;
   }
 
-.bottom-navbar{
-	background-color: #333;
-	overflow: hidden;	
-	bottom: 0;
-	width: 100%;
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
+
+.container {
+    padding: 20px;
+	display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+

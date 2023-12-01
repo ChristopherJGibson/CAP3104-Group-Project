@@ -1,5 +1,5 @@
 #event{
-	padding:0.5em;
+	padding:1em;
 }
 
 #group_title{
@@ -22,10 +22,5 @@
 	border-radius: 4px;
 	background-color: #f8f8f8;
   }
-
-#keywords{
-	font-size:11px;
-	font-style: italic;
-	padding-top:-10px;
-	padding-bottom:-10px;
-}
+  
+  

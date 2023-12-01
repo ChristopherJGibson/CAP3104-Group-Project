@@ -1,3 +1,7 @@
+login
+$(button).click(function() {
+    $(button).addClass('clicked');
+  });
 // Function to set the cookies
 function setGroupCookies(memberOf, managerOf) {
   document.cookie = `memberOf=${JSON.stringify(memberOf)}; path=/`;
@@ -30,3 +34,4 @@ function onAddGroup() {
   document.cookie = `memberOf="${groups.memberOf}, ${el}"; path=/`;
 
 }
+main
