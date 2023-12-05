@@ -1,4 +1,3 @@
- login
 // Function to set the cookies
 function setGroupCookies(memberOf, managerOf) {
     document.cookie = `memberOf=${JSON.stringify(memberOf)}; path=/`;
@@ -32,4 +31,3 @@ var events = [
 // Parse the array of demo events to load data into the calendar
 // This will be loaded from the server later
 scheduler.parse(events, "json");
-main

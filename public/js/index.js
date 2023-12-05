@@ -16,14 +16,10 @@ function getGroupCookies() {
    }
 
    return groups;
- login
 }
-
-
 
 setGroupCookies('Knights, Clubs, Studying', 'knights');
 
 function onAddGroup() {
-   console.log(document.cookie)
- main
+   console.log(document.cookie);
 }
